@@ -25,7 +25,21 @@
           version = "3-beta";
           src = "${binwalk-git}";
           nativeBuildInputs = with pkgs; [pkg-config];
-          buildInputs = with pkgs; [fontconfig.dev xz.dev];
+          buildInputs = with pkgs; [
+            fontconfig.dev
+            xz.dev
+            zlib
+            xz
+            gzip
+            bzip2
+            gnutar
+            p7zip
+            cabextract
+            squashfsTools
+            cramfsprogs
+            cramfsswap
+            sasquatch
+          ];
         };
       in {
         packages.default = built;
