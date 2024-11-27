@@ -25,7 +25,7 @@
           version = "3-beta";
           src = "${binwalk-git}";
           nativeBuildInputs = with pkgs; [pkg-config];
-          buildInputs = with pkgs; [
+          propagatedBuildInputs = with pkgs; [
             fontconfig.dev
             xz.dev
             zlib
